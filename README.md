@@ -70,6 +70,4 @@ Breast Cancer Wisconsin (Diagnostic) — created by W. N. Street, W. H. Wolberg 
 
 Single-institution research data; small test set; no demographic variables; precision is prevalence-dependent (this sample is 37% malignant). See Sections 7–9 of the report.
 
-## License
 
-MIT — see [LICENSE](LICENSE). The dataset remains subject to its original UCI terms.
