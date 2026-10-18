@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 numpy>=1.26
 pandas>=2.1
 scipy>=1.11
@@ -6,3 +7,14 @@ scikit-learn>=1.4
 matplotlib>=3.8
 seaborn>=0.13
 pillow>=10.0
+=======
+numpy>=2.0
+pandas>=2.2
+scipy>=1.13
+scikit-learn>=1.5
+matplotlib>=3.9
+seaborn>=0.13
+
+# Versions used to produce the reported results:
+# python 3.12.3, scikit-learn 1.8.0, pandas 3.0.2, numpy 2.4.4, matplotlib 3.10.8, seaborn 0.13.2, scipy 1.17.1
+>>>>>>> d7fc760f82854c35f9629c00db02d8229615cadf
