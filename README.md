@@ -137,9 +137,3 @@ python src/week4_ml_pipeline.py
 
 Breast Cancer Wisconsin (Diagnostic) — created by W. N. Street, W. H. Wolberg and O. L. Mangasarian, University of Wisconsin; hosted by the UCI Machine Learning Repository. 569 patients, 30 numeric features (mean, standard error and worst value of ten nucleus measurements), 212 malignant / 357 benign.
 
-## Limitations
-
-Single-institution research data; small test set; no demographic variables; precision is prevalence-dependent (this sample is 37% malignant). See Sections 7–9 of the report.
-
-
->>>>>>> d7fc760f82854c35f9629c00db02d8229615cadf
