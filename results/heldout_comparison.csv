@@ -1,0 +1,6 @@
+model,auc,accuracy,recall,precision
+Logistic Regression (L2),0.9962,0.965,0.9245,0.98
+Logistic Regression (L1),0.9979,0.979,0.9623,0.9808
+SVM (RBF),0.9966,0.986,0.9623,1.0
+Random Forest,0.9956,0.958,0.8868,1.0
+Gradient Boosting,0.9954,0.965,0.9057,1.0

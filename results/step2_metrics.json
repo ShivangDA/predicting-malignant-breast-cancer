@@ -1,0 +1,186 @@
+{
+  "H1_n_tests": 30,
+  "H1_n_sig_holm": 25,
+  "H1_n_sig_raw": 26,
+  "H1_not_sig": [
+    "fractal_dimension_se",
+    "smoothness_se",
+    "fractal_dimension_mean",
+    "texture_se",
+    "symmetry_se"
+  ],
+  "H1_top": [
+    {
+      "feature": "concave_points_worst",
+      "mean_M": 0.1822,
+      "mean_B": 0.0744,
+      "cohen_d": 2.6926,
+      "t": 29.1177,
+      "p_welch": 0.0,
+      "auc": 0.9667
+    },
+    {
+      "feature": "perimeter_worst",
+      "mean_M": 141.3703,
+      "mean_B": 87.0059,
+      "cohen_d": 2.5982,
+      "t": 25.3322,
+      "p_welch": 0.0,
+      "auc": 0.9755
+    },
+    {
+      "feature": "concave_points_mean",
+      "mean_M": 0.088,
+      "mean_B": 0.0257,
+      "cohen_d": 2.5452,
+      "t": 24.8448,
+      "p_welch": 0.0,
+      "auc": 0.9644
+    },
+    {
+      "feature": "radius_worst",
+      "mean_M": 21.1348,
+      "mean_B": 13.3798,
+      "cohen_d": 2.5439,
+      "t": 24.8297,
+      "p_welch": 0.0,
+      "auc": 0.9704
+    },
+    {
+      "feature": "perimeter_mean",
+      "mean_M": 115.3654,
+      "mean_B": 78.0754,
+      "cohen_d": 2.2895,
+      "t": 22.9353,
+      "p_welch": 0.0,
+      "auc": 0.9469
+    },
+    {
+      "feature": "area_worst",
+      "mean_M": 1422.2863,
+      "mean_B": 558.8994,
+      "cohen_d": 2.2302,
+      "t": 20.5708,
+      "p_welch": 0.0,
+      "auc": 0.9698
+    }
+  ],
+  "H1_area_mean_ci": {
+    "diff": 515.6,
+    "ci_lo": 463.9,
+    "ci_hi": 567.3
+  },
+  "H1_area_worst_p": 4.937923843586195e-54,
+  "H1_welch_vs_mwu_agree": 29,
+  "H1_area_mean_boot_ci": [
+    465.0,
+    567.0
+  ],
+  "H2": [
+    {
+      "feature": "radius_mean",
+      "var_M": 10.26543081462935,
+      "var_B": 3.1702217220438738,
+      "ratio": 3.2380797668659977,
+      "levene_W": 90.47705934341127,
+      "p": 5.279775501702809e-20,
+      "p_holm": 2.1119102006811235e-19
+    },
+    {
+      "feature": "area_mean",
+      "var_M": 135378.3553652866,
+      "var_B": 18033.030100242344,
+      "ratio": 7.507243908136507,
+      "levene_W": 170.20564976658696,
+      "p": 3.3126178774312083e-34,
+      "p_holm": 1.656308938715604e-33
+    },
+    {
+      "feature": "texture_mean",
+      "var_M": 14.284392882053115,
+      "var_B": 15.961020518994113,
+      "ratio": 0.8949548598759235,
+      "levene_W": 0.6839527103429562,
+      "p": 0.4085768376122148,
+      "p_holm": 0.7208872577070201
+    },
+    {
+      "feature": "concavity_mean",
+      "var_M": 0.005627899551104355,
+      "var_B": 0.0018872204874219448,
+      "ratio": 2.9821102455243054,
+      "levene_W": 70.48424316571685,
+      "p": 3.723189061443227e-16,
+      "p_holm": 1.1169567184329682e-15
+    },
+    {
+      "feature": "smoothness_mean",
+      "var_M": 0.00015896760245014756,
+      "var_B": 0.00018079699557171184,
+      "ratio": 0.8792601998029009,
+      "levene_W": 0.8377029548354149,
+      "p": 0.36044362885351006,
+      "p_holm": 0.7208872577070201
+    },
+    {
+      "feature": "area_worst",
+      "var_M": 357565.42184990615,
+      "var_B": 26765.425898561673,
+      "ratio": 13.359227803997735,
+      "levene_W": 196.88854524439353,
+      "p": 1.31517536603969e-38,
+      "p_holm": 7.89105219623814e-38
+    }
+  ],
+  "H3_n_reject": 7,
+  "H3_n_total": 8,
+  "H4": {
+    "chi2": 301.5,
+    "dof": 3,
+    "p": 4.603672940092946e-65,
+    "cramers_v": 0.728,
+    "min_expected": 52.9,
+    "pct_malignant_by_quartile": {
+      "Q1 (lowest)": 1.4,
+      "Q2": 7.7,
+      "Q3": 52.1,
+      "Q4 (highest)": 88.0
+    }
+  },
+  "H5": {
+    "F": 35.27,
+    "p_anova": 3.663589218507308e-15,
+    "H": 56.63,
+    "p_kruskal": 5.046443728090908e-13,
+    "eta_sq": 0.111,
+    "tukey": [
+      {
+        "group1": "High",
+        "group2": "Low",
+        "meandiff": "-286.79",
+        "p-adj": "0.0",
+        "lower": "-367.042",
+        "upper": "-206.538",
+        "reject": "True"
+      },
+      {
+        "group1": "High",
+        "group2": "Medium",
+        "meandiff": "-148.25",
+        "p-adj": "0.0",
+        "lower": "-228.502",
+        "upper": "-67.998",
+        "reject": "True"
+      },
+      {
+        "group1": "Low",
+        "group2": "Medium",
+        "meandiff": "138.54",
+        "p-adj": "0.0",
+        "lower": "58.394",
+        "upper": "218.686",
+        "reject": "True"
+      }
+    ]
+  }
+}

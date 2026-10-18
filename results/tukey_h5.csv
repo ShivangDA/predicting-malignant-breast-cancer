@@ -1,0 +1,4 @@
+group1,group2,meandiff,p-adj,lower,upper,reject
+High,Low,-286.7898,0.0,-367.042,-206.5375,True
+High,Medium,-148.2498,0.0,-228.502,-67.9975,True
+Low,Medium,138.54,0.0002,58.3937,218.6863,True

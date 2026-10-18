@@ -1,0 +1,395 @@
+{
+  "n_train": 426,
+  "n_test": 143,
+  "cv": [
+    {
+      "model": "Logistic Regression (L2)",
+      "accuracy": 0.9718,
+      "precision": 0.981,
+      "recall": 0.9435,
+      "f1": 0.9614,
+      "roc_auc": 0.9914,
+      "accuracy_sd": 0.016,
+      "precision_sd": 0.0251,
+      "recall_sd": 0.0363,
+      "f1_sd": 0.0221,
+      "roc_auc_sd": 0.009,
+      "train_auc": 0.9977,
+      "train_acc": 0.9888
+    },
+    {
+      "model": "Logistic Regression (L1)",
+      "accuracy": 0.9694,
+      "precision": 0.9737,
+      "recall": 0.9433,
+      "f1": 0.958,
+      "roc_auc": 0.9939,
+      "accuracy_sd": 0.0191,
+      "precision_sd": 0.0132,
+      "recall_sd": 0.0415,
+      "f1_sd": 0.0267,
+      "roc_auc_sd": 0.0047,
+      "train_auc": 0.9968,
+      "train_acc": 0.9818
+    },
+    {
+      "model": "SVM (RBF)",
+      "accuracy": 0.9671,
+      "precision": 0.9624,
+      "recall": 0.9496,
+      "f1": 0.9555,
+      "roc_auc": 0.9942,
+      "accuracy_sd": 0.0138,
+      "precision_sd": 0.023,
+      "recall_sd": 0.032,
+      "f1_sd": 0.0188,
+      "roc_auc_sd": 0.0042,
+      "train_auc": 0.9974,
+      "train_acc": 0.9859
+    },
+    {
+      "model": "Random Forest",
+      "accuracy": 0.9647,
+      "precision": 0.9677,
+      "recall": 0.9371,
+      "f1": 0.9518,
+      "roc_auc": 0.9876,
+      "accuracy_sd": 0.0167,
+      "precision_sd": 0.0198,
+      "recall_sd": 0.0342,
+      "f1_sd": 0.0231,
+      "roc_auc_sd": 0.0093,
+      "train_auc": 1.0,
+      "train_acc": 1.0
+    },
+    {
+      "model": "Gradient Boosting",
+      "accuracy": 0.9506,
+      "precision": 0.946,
+      "recall": 0.9246,
+      "f1": 0.9339,
+      "roc_auc": 0.9862,
+      "accuracy_sd": 0.0189,
+      "precision_sd": 0.0527,
+      "recall_sd": 0.0248,
+      "f1_sd": 0.023,
+      "roc_auc_sd": 0.0072,
+      "train_auc": 1.0,
+      "train_acc": 1.0
+    }
+  ],
+  "fs": [
+    {
+      "feature_set": "All 30 features",
+      "accuracy": 0.9718,
+      "recall": 0.9435,
+      "f1": 0.9614,
+      "auc": 0.9914,
+      "auc_sd": 0.009
+    },
+    {
+      "feature_set": "VIF-pruned (17)",
+      "accuracy": 0.9718,
+      "recall": 0.9308,
+      "f1": 0.9608,
+      "auc": 0.989,
+      "auc_sd": 0.0118
+    },
+    {
+      "feature_set": "Mean features only (10)",
+      "accuracy": 0.9342,
+      "recall": 0.8869,
+      "f1": 0.9091,
+      "auc": 0.9833,
+      "auc_sd": 0.0077
+    },
+    {
+      "feature_set": "Top-5 by ANOVA-F",
+      "accuracy": 0.9436,
+      "recall": 0.9058,
+      "f1": 0.9231,
+      "auc": 0.9844,
+      "auc_sd": 0.0072
+    },
+    {
+      "feature_set": "RFE-10 (logistic)",
+      "accuracy": 0.9624,
+      "recall": 0.9246,
+      "f1": 0.9479,
+      "auc": 0.9916,
+      "auc_sd": 0.0071
+    },
+    {
+      "feature_set": "L1-selected",
+      "accuracy": 0.9694,
+      "recall": 0.9433,
+      "f1": 0.958,
+      "auc": 0.9939,
+      "auc_sd": 0.0047
+    }
+  ],
+  "fs_selected": {
+    "Top-5 by ANOVA-F": [
+      "perimeter_mean",
+      "concave_points_mean",
+      "radius_worst",
+      "perimeter_worst",
+      "concave_points_worst"
+    ],
+    "RFE-10 (logistic)": [
+      "concave_points_mean",
+      "radius_se",
+      "area_se",
+      "compactness_se",
+      "radius_worst",
+      "texture_worst",
+      "perimeter_worst",
+      "area_worst",
+      "concavity_worst",
+      "concave_points_worst"
+    ],
+    "L1-selected": [
+      "texture_mean",
+      "concave_points_mean",
+      "radius_se",
+      "texture_se",
+      "smoothness_se",
+      "compactness_se",
+      "fractal_dimension_se",
+      "radius_worst",
+      "texture_worst",
+      "area_worst",
+      "smoothness_worst",
+      "concavity_worst",
+      "concave_points_worst",
+      "symmetry_worst"
+    ]
+  },
+  "l1_n_selected": 14,
+  "coef_stability": [
+    {
+      "feature_set": "All 30",
+      "C": 100.0,
+      "mean_coef_sd": 1.994,
+      "mean_abs_coef": 2.738,
+      "sign_flip_pct": 16.6
+    },
+    {
+      "feature_set": "All 30",
+      "C": 0.3,
+      "mean_coef_sd": 0.122,
+      "mean_abs_coef": 0.402,
+      "sign_flip_pct": 8.4
+    },
+    {
+      "feature_set": "VIF-pruned (17)",
+      "C": 100.0,
+      "mean_coef_sd": 2.492,
+      "mean_abs_coef": 3.56,
+      "sign_flip_pct": 15.6
+    },
+    {
+      "feature_set": "VIF-pruned (17)",
+      "C": 0.3,
+      "mean_coef_sd": 0.14,
+      "mean_abs_coef": 0.596,
+      "sign_flip_pct": 5.8
+    }
+  ],
+  "best_C": 0.31622776601683794,
+  "best_cv_auc": 0.9921,
+  "test_default": {
+    "accuracy": 0.9790209790209791,
+    "precision": 1.0,
+    "recall": 0.9433962264150944,
+    "f1": 0.970873786407767,
+    "auc": 0.9976939203354298,
+    "ap": 0.9965422644512896,
+    "brier": 0.01883626571006092,
+    "tn": 90,
+    "fp": 0,
+    "fn": 3,
+    "tp": 50
+  },
+  "test_ci": {
+    "auc": [
+      0.992,
+      1.0
+    ],
+    "recall": [
+      0.8723,
+      1.0
+    ],
+    "accuracy": [
+      0.951,
+      1.0
+    ]
+  },
+  "heldout": [
+    {
+      "model": "Logistic Regression (L2)",
+      "auc": 0.9962,
+      "accuracy": 0.965,
+      "recall": 0.9245,
+      "precision": 0.98
+    },
+    {
+      "model": "Logistic Regression (L1)",
+      "auc": 0.9979,
+      "accuracy": 0.979,
+      "recall": 0.9623,
+      "precision": 0.9808
+    },
+    {
+      "model": "SVM (RBF)",
+      "auc": 0.9966,
+      "accuracy": 0.986,
+      "recall": 0.9623,
+      "precision": 1.0
+    },
+    {
+      "model": "Random Forest",
+      "auc": 0.9956,
+      "accuracy": 0.958,
+      "recall": 0.8868,
+      "precision": 1.0
+    },
+    {
+      "model": "Gradient Boosting",
+      "auc": 0.9954,
+      "accuracy": 0.965,
+      "recall": 0.9057,
+      "precision": 1.0
+    }
+  ],
+  "learning_gap_final": 0.0011,
+  "thr_choice": {
+    "cost_opt_10to1": 0.29000000000000004,
+    "f1_opt": 0.44,
+    "recall98": 0.11
+  },
+  "thr_scenarios_test": {
+    "Default 0.50": {
+      "thr": 0.5,
+      "recall": 0.9434,
+      "specificity": 1.0,
+      "precision": 1.0,
+      "f1": 0.9709,
+      "fn": 3.0,
+      "fp": 0.0,
+      "cost": 30.0
+    },
+    "Cost-optimal (10:1) 0.29": {
+      "thr": 0.29,
+      "recall": 0.9811,
+      "specificity": 0.9889,
+      "precision": 0.9811,
+      "f1": 0.9811,
+      "fn": 1.0,
+      "fp": 1.0,
+      "cost": 11.0
+    },
+    "Recall>=98% 0.11": {
+      "thr": 0.11,
+      "recall": 0.9811,
+      "specificity": 0.9111,
+      "precision": 0.8667,
+      "f1": 0.9204,
+      "fn": 1.0,
+      "fp": 8.0,
+      "cost": 18.0
+    },
+    "F1-optimal 0.44": {
+      "thr": 0.44,
+      "recall": 0.9623,
+      "specificity": 0.9889,
+      "precision": 0.9808,
+      "f1": 0.9714,
+      "fn": 2.0,
+      "fp": 1.0,
+      "cost": 21.0
+    }
+  },
+  "cost_ratio_table": [
+    {
+      "cost_ratio": 1,
+      "thr": 0.44,
+      "fn": 2,
+      "fp": 1,
+      "recall": 0.9623
+    },
+    {
+      "cost_ratio": 2,
+      "thr": 0.29,
+      "fn": 1,
+      "fp": 1,
+      "recall": 0.9811
+    },
+    {
+      "cost_ratio": 5,
+      "thr": 0.29,
+      "fn": 1,
+      "fp": 1,
+      "recall": 0.9811
+    },
+    {
+      "cost_ratio": 10,
+      "thr": 0.29,
+      "fn": 1,
+      "fp": 1,
+      "recall": 0.9811
+    },
+    {
+      "cost_ratio": 20,
+      "thr": 0.11,
+      "fn": 1,
+      "fp": 8,
+      "recall": 0.9811
+    },
+    {
+      "cost_ratio": 50,
+      "thr": 0.03,
+      "fn": 0,
+      "fp": 18,
+      "recall": 1.0
+    }
+  ],
+  "top_coefs": {
+    "texture_worst": 0.899,
+    "radius_se": 0.781,
+    "symmetry_worst": 0.693,
+    "radius_worst": 0.671,
+    "concave_points_mean": 0.643,
+    "area_worst": 0.627,
+    "perimeter_worst": 0.595,
+    "concavity_worst": 0.565
+  },
+  "perm_top": {
+    "symmetry_worst": 0.0035,
+    "texture_worst": 0.0033,
+    "concavity_worst": 0.0024,
+    "concave_points_worst": 0.0021,
+    "radius_worst": 0.0014,
+    "concave_points_mean": 0.0014,
+    "perimeter_worst": 0.0011,
+    "concavity_mean": 0.0011
+  },
+  "group_importance": {
+    "Size (radius, perimeter, area)": 0.1704,
+    "Shape (concavity, compactness)": 0.0327,
+    "Texture": 0.0107,
+    "Smooth/Symmetry/Fractal": 0.0066
+  },
+  "n_wrong": 3,
+  "review_band": {
+    "lo": 0.11,
+    "hi": 0.5,
+    "n": 10,
+    "pct": 7.0,
+    "malignant_in_band": 2,
+    "missed_below": 1,
+    "cleared_below": 83,
+    "flagged_above": 50,
+    "fp_above": 0
+  }
+}

@@ -1,0 +1,19 @@
+[
+ "texture_mean",
+ "smoothness_mean",
+ "concave_points_mean",
+ "symmetry_mean",
+ "fractal_dimension_mean",
+ "texture_se",
+ "perimeter_se",
+ "smoothness_se",
+ "compactness_se",
+ "concavity_se",
+ "concave_points_se",
+ "symmetry_se",
+ "fractal_dimension_se",
+ "area_worst",
+ "smoothness_worst",
+ "symmetry_worst",
+ "fractal_dimension_worst"
+]

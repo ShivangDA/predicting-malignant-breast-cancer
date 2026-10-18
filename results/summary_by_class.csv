@@ -1,0 +1,5 @@
+,radius_mean,radius_mean,texture_mean,texture_mean,area_mean,area_mean,concavity_mean,concavity_mean,concave_points_mean,concave_points_mean
+,mean,std,mean,std,mean,std,mean,std,mean,std
+label,,,,,,,,,,
+Benign,12.147,1.781,17.915,3.995,462.79,134.287,0.046,0.043,0.026,0.016
+Malignant,17.463,3.204,21.605,3.779,978.376,367.938,0.161,0.075,0.088,0.034
